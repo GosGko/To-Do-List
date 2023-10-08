@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/sumbit", (req, res) => {
-
+    console.log("good")
 });
 
 app.listen(port, () => {
