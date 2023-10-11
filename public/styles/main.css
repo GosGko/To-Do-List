@@ -1,6 +1,8 @@
 
 body{
     font-family: 'Outfit', sans-serif;
+    text-align: center;
+    background-color: #faedcd;
 }
 
 .far {
@@ -9,7 +11,7 @@ body{
 }
 
 .nav-link{
-    color: #6434b6;
+    color: #95a368;
     text-decoration: none;
     font-size: 16px;
     display: block;
@@ -21,8 +23,8 @@ body{
     font-family: 'Cormorant', serif;
 }
 
-h1{
+.heading{
     text-align: center;
     font-size: 6rem;
-    color: #4c317a;
+    color: #95a368;;
 }

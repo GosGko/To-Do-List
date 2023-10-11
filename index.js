@@ -8,8 +8,13 @@ app.use(express.static("public"))
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+let date = new Date().toLocaleDateString('en-us', { weekday:"long", month:"short", day:"numeric"} );
+
+
 app.get("/", (req, res) => {
-    res.render("index.ejs");
+    res.render("index.ejs", {
+        date: date,
+    });
 });
 
 app.post("/sumbit", (req, res) => {
