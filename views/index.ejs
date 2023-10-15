@@ -32,11 +32,25 @@
     </div>
   </nav>
   <h1 id="heading">🍂To Do List🍂</h1>
-  <div>
+  <div><% if (locals.date) { %>
     <h1 id="aftheading" class="box"><%= date %></h1>
+   <% }else{ %>
+    <h1 id="aftheading" class="box">Work List</h1>
+  <% } %>
   </div>
   <div class="box">
    <!-- form, text input and submit button that when dettects click make new div with checkbox and paragraph with the text that the user typed in the text input.-->
+   <form class="item" action="/" method="post">
+   <input type="text" name="newItem" placeholder="New Item" autocomplete="off" required>
+   <button type="submit" name="list" value="<%= date %>">+</button>
+  </form>
+    <% if (locals.thing) { %>
+      <div>
+        <input type="checkbox" name="checkbox" id="checkbox">
+      <p><%= thing %></p>
+      </div>
+    <% } else { %>
+    <% } %>
   </div>
 </body>
 </html>

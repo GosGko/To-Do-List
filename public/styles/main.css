@@ -32,12 +32,50 @@ body{
 
 #aftheading{
     background-color: #d4a373;
+    color: #fbffdf;
+    font-size: 2rem;
+}
+
+.box {
+    background-color: #d4a373;
     margin: 50px auto;
     display: block;
     max-width: 400px;
     border-radius: 5px;
-    color: #e9edc9;
     padding: 10px 5px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-    font-size: 2rem;
 }
+
+input[type= "text"] {
+    color: #fbffdf;
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 313px;
+
+}
+
+::placeholder{
+    color: #fbffdf;
+}
+
+input[type= "text"]:focus {
+    border-bottom: 3px solid #98a56b;
+    outline: none;
+  }
+
+button {
+    background-color: #95a368;
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    color: #fff;
+    font-size: 30px;
+    border-width: 0;
+}
+
