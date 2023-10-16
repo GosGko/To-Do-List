@@ -40,17 +40,20 @@
   </div>
   <div class="box">
    <!-- form, text input and submit button that when dettects click make new div with checkbox and paragraph with the text that the user typed in the text input.-->
-   <form class="item" action="/" method="post">
+   <form class="item" action="<% if (locals.date)  { %> / <% } else { %> /work <% } %>" method="post">
    <input type="text" name="newItem" placeholder="New Item" autocomplete="off" required>
-   <button type="submit" name="list" value="<%= date %>">+</button>
+   <button type="submit" name="list" value="<% if (locals.date)  { %> date <% } else { %> workday <% } %>">+</button>
   </form>
     <% if (locals.thing) { %>
-      <div>
+      <div class="todo">
         <input type="checkbox" name="checkbox" id="checkbox">
       <p><%= thing %></p>
       </div>
     <% } else { %>
     <% } %>
   </div>
+
+  <p>Copyright © <%= year%></p>
+
 </body>
 </html>

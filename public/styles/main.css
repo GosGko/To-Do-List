@@ -79,3 +79,19 @@ button {
     border-width: 0;
 }
 
+.todo {
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    font-size: 23px;
+    padding-left: 15px;
+    justify-content: flex-start;
+    align-items: baseline;
+    border-bottom: 1px solid gray;
+    font-family: 'Cormorant', serif;
+}
+
+.checkbox {
+    
+}
