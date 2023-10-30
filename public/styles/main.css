@@ -56,7 +56,6 @@ input[type= "text"] {
     font-size: 20px;
     font-weight: 200;
     width: 313px;
-
 }
 
 ::placeholder{
@@ -89,8 +88,6 @@ button {
     border-bottom: 1px solid  #94a55db9;
     font-family: 'Cormorant', serif;
     align-items: center;
-
-
 }
 
 .libs {
@@ -111,4 +108,10 @@ input:checked + p {
 
   .kon {
     color: #95a368;
+}
+
+@media (max-width: 681px) {
+    #heading {
+        font-size: 3rem;
+    }
 }
